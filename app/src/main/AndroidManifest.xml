@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.ntt.androidjetpack">
+
+<uses-permission android:name="android.permission.INTERNET" />
+
+<application
+    android:name=".JetpackApplication"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.AndroidJetpack"
+    android:usesCleartextTraffic="true">
+    <activity
+        android:name=".NavigationActivity"
+        android:exported="true">
+
+        <nav-graph android:value="@navigation/navigation_main" />
+    </activity>
+    <activity
+        android:name=".StudentRoomActivity"
+        android:exported="true">
+
+    </activity>
+    <activity
+        android:name=".BindingActivity"
+        android:exported="true" />
+    <activity
+        android:name=".MusicActivity"
+        android:exported="true" />
+    <activity
+        android:name=".MainActivity"
+        android:exported="true" />
+    <activity
+        android:name=".WorkActivity"
+        android:exported="true">
+
+    </activity>
+
+    <activity
+        android:name="com.ntt.androidjetpack.PagingActivity"
+        android:exported="true">
+
+    </activity>
+    <activity
+        android:name="com.ntt.androidjetpack.PassengerActivity"
+        android:exported="true">
+
+    </activity>
+    <activity
+        android:name="com.ntt.androidjetpack.HiltActivity"
+        android:exported="true"
+
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+</application>
+
+</manifest>

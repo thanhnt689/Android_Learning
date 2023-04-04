@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ntt.androidjetpack.fragment.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/anim_bottom_up"
+            app:exitAnim="@android:anim/slide_in_left" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ntt.androidjetpack.fragment.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <argument
+            android:name="username"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="ntt.com/L2011/{username}" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.ntt.androidjetpack.fragment.WelcomeFragment"
+        android:label="WelcomeFragment">
+
+        <argument
+            android:name="username"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ntt.androidjetpack.fragment.SettingFragment"
+        android:label="SettingFragment" />
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.ntt.androidjetpack.fragment.TermsFragment"
+        android:label="TermsFragment" />
+
+    <action
+        android:id="@+id/action_global_termsFragment"
+        app:destination="@id/termsFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ntt.androidjetpack.fragment.SearchFragment"
+        android:label="SearchFragment" />
+
+</navigation>
