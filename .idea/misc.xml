@@ -3,10 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/T3h/Android/AndroidDay16/app/src/main/res/layout/activity_comment.xml" value="0.21331521739130435" />
-        <entry key="..\:/T3h/Android/AndroidDay16/app/src/main/res/layout/activity_main.xml" value="0.2630208333333333" />
-        <entry key="..\:/T3h/Android/AndroidDay16/app/src/main/res/layout/item_comment.xml" value="0.21331521739130435" />
-        <entry key="..\:/T3h/Android/AndroidDay16/app/src/main/res/layout/item_news.xml" value="0.22010869565217392" />
+        <entry key="..\:/T3h/Android/AndroidDay15/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/T3h/Android/AndroidDay15/app/src/main/res/layout/activity_welcome.xml" value="0.2056159420289855" />
+        <entry key="..\:/T3h/Android/AndroidDay15/app/src/main/res/layout/item_student.xml" value="0.23641304347826086" />
       </map>
     </option>
   </component>

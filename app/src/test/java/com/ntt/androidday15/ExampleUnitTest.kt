@@ -1,4 +1,4 @@
-package com.ntt.androidday16
+package com.ntt.androidday15
 
 import org.junit.Test
 
