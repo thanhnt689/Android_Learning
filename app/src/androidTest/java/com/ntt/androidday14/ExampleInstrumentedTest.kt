@@ -1,4 +1,4 @@
-package com.ntt.androidday15
+package com.ntt.androidday14
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.ntt.androidday15", appContext.packageName)
+        assertEquals("com.ntt.androidday14", appContext.packageName)
     }
 }
